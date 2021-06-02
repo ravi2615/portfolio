@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+
+
+.mat-sidenav-container{
+    background-color: $light-white;
+    height: 100vh;
+    .mat-sidenav{
+        width: 250px;
+        padding: 50px;
+        background-color: $light-main;
+        line-height: 30px;
+        img{
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1) !important;
+        }
+        .mat-nav-list{
+            a{
+                color: $light-white;
+                font-size: 20px;
+            }
+        }
+
+    }
+    .mat-toolbar{
+        position: fixed;
+        z-index: 99;
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        img{
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1) !important;
+        }
+        .mat-icon-button{
+            color: $light-main;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            .mat-icon{
+                font-size: 35px;
+            }
+        }
+    }
+
+      .main-toolbar-hide{
+          display: none !important;
+      }
+}
+
+
+  

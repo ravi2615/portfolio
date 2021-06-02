@@ -1,0 +1,35 @@
+@import '../../../styles.scss';
+
+.container-fluid{
+    margin-top: -1px;
+    padding: 40px 20px;
+    background: linear-gradient( to top, $light-main,$light-main) no-repeat bottom;
+    background-size: 100% 100%;
+    color: $light-white;
+    .about_heading{
+        font-size: 50px
+    }
+    .about{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .about_img{
+            img{
+                max-width: 50%;
+                height: auto;
+            }
+        }
+        .about_para{
+            .about_subtitle{
+                font-size: 30px !important;
+                font-weight: bold;
+                margin: 30px 0;
+            }
+            p{
+                line-height: 30px;
+                font-size: 20px;
+            }
+        }
+    }
+}

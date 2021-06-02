@@ -1,0 +1,69 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="over" #sidenav role="navigation" fxLayout="column" fxLayoutAlign="space-between center" >
+       <mat-label><img src="../../../assets/intro1.jpeg" style="width: 100px; height:100px; border-radius:50%"></mat-label>
+       <mat-nav-list style="font-size:20px;">
+        <a mat-list-item (click)="Navigate(home); sidenav.toggle()">Home</a>
+        <a mat-list-item (click)="Navigate(about); sidenav.toggle()">About</a>
+        <a mat-list-item (click)="Navigate(skill); sidenav.toggle()">Skill</a>
+        <a mat-list-item (click)="Navigate(experience); sidenav.toggle()">Experience</a>
+        <!-- <a mat-list-item (click)="Navigate(project)"> Projects</a> -->
+       </mat-nav-list>
+    </mat-sidenav>
+       <mat-sidenav-content (scroll)="onScroll($event)">
+        <mat-toolbar fxLayout="row" class="bg-white border border-secondory" [class.main-toolbar-hide]="hideMainToolbar">
+            
+       <mat-label fxFlex="80">
+           <img src="../../../assets/intro1.jpeg" style="width: 40px; height:40px; border-radius:50%;">
+        </mat-label>
+                 
+                <mat-list fxLayout fxHide.lt-sm fxLayoutGap="30px">
+                    <a mat-list-item (click)="Navigate(home)">Home</a>
+                    <a mat-list-item (click)="Navigate(about)">About</a>
+                    <a mat-list-item (click)="Navigate(skill)">Skill</a>
+                    <a mat-list-item (click)="Navigate(experience)">Experience</a>
+                    <!-- <a mat-list-item (click)="Navigate(project)"> Projects</a> -->
+                </mat-list>
+                <button mat-icon-button (click)="sidenav.toggle()"
+                fxShow.xs
+                fxHide.lt-xl>
+                    <mat-icon>menu</mat-icon>
+                </button>
+        </mat-toolbar>
+        
+        <main>
+            <div #home>
+                <app-header></app-header>
+            </div>
+            <div #about>
+                <app-about></app-about>
+            </div>
+            <div #skill>
+                <app-skill></app-skill>
+            </div>
+            <div></div>
+            <div #experience>
+                <app-experience></app-experience>
+            </div>
+            <app-footer></app-footer>
+        </main>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- <div class="nav">
+	<div (click)="Navigate(home)">Home</div>
+	<div (click)="Navigate(about)">About</div>
+	<div (click)="Navigate(contact)">Contact</div>
+</div>
+<div class="sections">
+	<div #home class="container">
+		<app-header></app-header>
+	</div>
+	<div #about class="container">
+		<app-about></app-about>
+	</div>
+	<div #contact class="container">
+		<h3>Contact</h3>
+	</div>
+</div> -->

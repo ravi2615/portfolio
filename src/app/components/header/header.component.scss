@@ -1,0 +1,49 @@
+@import '../../../styles.scss';
+
+.container-fluid{
+    // height: 100vh;
+    padding-top: 100px;
+    .row{
+            .intro-name{
+                padding: 10px;
+                justify-content: center;
+                h1{
+                    font-size: 33px;
+                    font-weight: bolder; 
+                    line-height: 55px;
+                    span{
+                        color: $light-main;
+                    }
+                }
+                button{
+                    width: 200px !important;
+                    background-color: $light-main;
+                    color: $light-white;
+                }
+                
+            .social{
+                img{
+                    width: 40px;
+                    height: 40px;
+                    // margin-right: 10px;
+                    cursor: pointer;
+                    transition: .5s;
+                }
+                img:hover{
+                    transform: scale(1.05);
+                }
+            }
+            }
+            .header_img{
+                background: linear-gradient( to bottom ,transparent 65%, $light-main 20%, $light-main) no-repeat bottom;
+                background-size: 100% 100%;
+                width: 100%;
+                .intro-img{
+                    max-width: 270px;
+                    height: auto;
+                    border-radius: 50%;
+                    box-shadow: 0 0 3px $light-main;
+                }
+            }
+    }        
+}
