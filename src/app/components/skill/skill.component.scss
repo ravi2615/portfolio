@@ -6,17 +6,24 @@
     padding: 20px;
     color: $light-white;
     margin-top: -2px;
-    // height: 100vh;
+    height: 100vh;
     .skill_heading{
         font-size: 45px
     }
-    .mat-card{
+    .skill{
         background-color: $light-white;
-        box-shadow: 0 0 1px $light-main;
-        border-radius: 4px;
+        // box-shadow: 0 0 1px $light-main;
+        // border-radius: 4px;
         line-height: 50px;
-        .mat-card-subtitle{
-            font-size: 15px;
+        // .mat-card-subtitle{
+        //     font-size: 15px;
+        // }
+        margin: -5px;
+        img{
+            width: 80px;
+            height: 80px;
+            // border-radius: 50%;
+            // padding: 5px;
         }
     }
 }
