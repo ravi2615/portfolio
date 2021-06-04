@@ -12,6 +12,10 @@ export class SocialService {
       name: "linkedin",
       image: "https://img.icons8.com/color/256/000000/linkedin-circled--v1.png",
       link: "https://www.linkedin.com/in/ravi-shankar-1a008a194"
+    },{
+      name: "github",
+      image: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+      link: "https://github.com/ravi2615"
     },
     {
       name: "facebook",
