@@ -203,3 +203,66 @@ For CI servers and headless environments, generate a new token with firebase log
 [debug] [2021-06-04T10:44:54.833Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
 
 For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-06-04T10:50:56.023Z] ----------------------------------------------------------------------
+[debug] [2021-06-04T10:50:56.028Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-06-04T10:50:56.028Z] CLI Version:   9.12.0
+[debug] [2021-06-04T10:50:56.028Z] Platform:      win32
+[debug] [2021-06-04T10:50:56.029Z] Node Version:  v12.18.0
+[debug] [2021-06-04T10:50:56.112Z] Time:          Fri Jun 04 2021 03:50:56 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-06-04T10:50:56.113Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-04T10:50:56.164Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-04T10:50:56.164Z] > authorizing via signed-in user (ravishankar2615@gmail.com)
+[debug] [2021-06-04T10:50:56.164Z] [iam] checking project ravishankar2615-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-04T10:50:56.202Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ravishankar2615-portfolio:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-06-04T10:50:58.785Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 22:20:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1368","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-04T10:50:58.790Z] > refreshing access token with scopes: []
+[debug] [2021-06-04T10:50:58.791Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-04T10:51:20.003Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-06-04T10:51:41.173Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project ravishankar2615-portfolio. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-06-04T10:51:57.889Z] ----------------------------------------------------------------------
+[debug] [2021-06-04T10:51:57.891Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-06-04T10:51:57.891Z] CLI Version:   9.12.0
+[debug] [2021-06-04T10:51:57.891Z] Platform:      win32
+[debug] [2021-06-04T10:51:57.891Z] Node Version:  v12.18.0
+[debug] [2021-06-04T10:51:57.892Z] Time:          Fri Jun 04 2021 03:51:57 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-06-04T10:51:57.892Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-04T10:51:57.901Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-04T10:51:57.901Z] > authorizing via signed-in user (ravishankar2615@gmail.com)
+[debug] [2021-06-04T10:51:57.901Z] [iam] checking project ravishankar2615-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-04T10:51:57.903Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ravishankar2615-portfolio:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-06-04T10:51:59.931Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 22:21:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1332","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-04T10:51:59.933Z] > refreshing access token with scopes: []
+[debug] [2021-06-04T10:51:59.933Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-04T10:52:00.589Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 03 Jun 2021 22:21:31 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-04T10:52:00.695Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ravishankar2615-portfolio [none]
+[debug] [2021-06-04T10:52:02.251Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ravishankar2615-portfolio 200
+[debug] [2021-06-04T10:52:02.251Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ravishankar2615-portfolio {"projectId":"ravishankar2615-portfolio","projectNumber":"378611122485","displayName":"ravishankar2615-portfolio","name":"projects/ravishankar2615-portfolio","resources":{"hostingSite":"ravishankar2615-portfolio"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ravishankar2615-portfolio'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-06-04T10:52:02.255Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-04T10:52:02.256Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-04T10:52:02.873Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Thu, 03 Jun 2021 22:21:34 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-04T10:52:03.124Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ravishankar2615-portfolio/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-06-04T10:53:55.769Z] Error: connect ETIMEDOUT 172.217.167.234:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.167.234:443
