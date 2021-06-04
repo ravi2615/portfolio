@@ -20,6 +20,7 @@ import { SkillService } from './services/skill/skill.service';
 import { ProjectsService } from './services/projects/projects.service';
 import { ExpreinceService } from './services/expereince/expreince.service';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { DialogComponent } from './components/project/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
     ContactComponent,
     ExperienceComponent,
     FooterComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,

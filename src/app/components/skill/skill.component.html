@@ -1,39 +1,4 @@
-<!-- <div class="container-fluid">
-    <-- <div class="text-center skill_heading">
-        <h1 style="text-decoration: underline;">Technical Skill</h1>
-    </div> --
-    <div class="row py-5 justify-content-around">
-        <mat-card class="col-10 col-md-6 col-md-3 d-flex flex-column px-5 justify-content-around">
-            <h2 class="text-center py-4">Front-end<br><hr></h2>
-            <mat-card-header *ngFor="let frontend of skill[0]['Frontend']">
-            <img mat-card-avatar src="{{frontend.image}}">
-            <mat-card-subtitle>{{ frontend.skillName }}</mat-card-subtitle>
-            </mat-card-header>
-        </mat-card>
 
-        <mat-card  class="col-10 col-md-3 d-flex flex-column px-5 justify-content-around">
-            <h2 class="text-center py-4">Back-end<br><hr></h2>
-            <mat-card-header *ngFor="let backend of skill[1]['Backend']">
-                <img mat-card-avatar src="{{backend.image}}">
-                <mat-card-subtitle>{{ backend.skillName }}</mat-card-subtitle>
-            </mat-card-header>
-        </mat-card>
-        <mat-card  class="col-10 col-md-3 d-flex flex-column px-5 justify-content-around">
-            <h2 class="text-center py-4">Database<br><hr></h2>
-            <mat-card-header *ngFor="let database of skill[2]['Database']">
-                <img mat-card-avatar src="{{database.image}}">
-                <mat-card-subtitle>{{ database.skillName }}</mat-card-subtitle>
-            </mat-card-header>
-        </mat-card>
-        <mat-card  class="col-10 col-md-3 d-flex flex-column px-5 justify-content-around">
-            <h2 class="text-center py-4">Programming Language<br><hr></h2>
-            <mat-card-header *ngFor="let programming of skill[3]['Programming']">
-                <img mat-card-avatar src="{{programming.image}}">
-                <mat-card-subtitle>{{ programming.skillName }}</mat-card-subtitle>
-            </mat-card-header>
-        </mat-card>
-    </div>    
-</div> -->
 <div [ngClass]="themeService.dark?'dark':'light'">
     <div class="container-fluid">
         <div class="text-center skill_heading">

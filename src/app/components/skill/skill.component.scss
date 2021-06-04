@@ -4,7 +4,6 @@
     padding: 20px;
     color: $light-white;
     margin-top: -2px;
-    // height: 100vh;
     .skill_heading h1{
         font-size: 40px
     }
@@ -16,8 +15,6 @@
         img{
             width: 80px;
             height: 80px;
-            // border-radius: 50%;
-            // padding: 5px;
             background-color: $light-white;
             padding: 5px;
             border-radius: 5px;
@@ -27,7 +24,7 @@
 
 .light{
     .container-fluid{
-    background: linear-gradient( to top ,transparent 65%, $light-main 20%, $light-main) no-repeat bottom;
+    background: linear-gradient( to top ,transparent 67%, $light-main 20%, $light-main) no-repeat bottom;
 	background-size: 100% 100%;
     }
 }

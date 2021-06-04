@@ -5,7 +5,7 @@
             <h1 class="p-4">Projects I've worked on</h1>
         </div>
         <div class="project d-flex flex-row col-md-4 col-10 justify-content-center" *ngFor="let project of projects">
-            <img src="{{project.image}}" alt="{{project.name}}" class="justify-content-around">
+            <img src="{{project.image}}" alt="{{project.name}}" class="justify-content-around" (click)="openDialog(project)">
         </div>  
     </div>  
 </div>

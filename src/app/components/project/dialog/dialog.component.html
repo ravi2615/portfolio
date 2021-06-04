@@ -1,0 +1,30 @@
+
+
+<div [ngClass]="themeService.dark?'dark':'light'">
+    <div class="container-fluid">  
+        <div class="row align-items-center justify-content-center">
+            <div class="project d-flex flex-column align-items-center justify-content-center">
+                    <h1 class="project_heading text-center text-uppercase">{{data.name}}</h1>
+                    <img src="{{data.image}}" alt="{{data.name}}" class="justify-content-around">
+                    <a mat-raised-button *ngIf="data.link != ''" href="{{data.link}}" class="text-center">Visit Website<mat-icon>chevron_right</mat-icon></a>
+                    <a mat-raised-button *ngIf="data.link == ''" href="{{data.sourceCode}}" class="text-center">Source Code</a>
+            </div>  
+            
+            <div class="text-center skill_heading">
+                <h3 class="p-2">Languages and Tools I used</h3>
+            </div>
+            
+            <div class=" d-flex align-items-center justify-content-center">
+                <div class="skill" *ngFor="let skill of data.tools">
+                        <img  src="{{skill.image}}" title="{{skill.skillName}}">
+                </div>
+        </div>
+        <div class=" d-flex flex-column align-items-center text-center pt-4">
+            <div *ngFor="let detail of data.description">
+                <li mat-list-item class="text-capitalize" >{{detail.list}}</li>
+            </div>
+            <button mat-raised-button (click)="onClose()" class="m-3"><mat-icon color="warn">clear</mat-icon></button>
+        </div>
+        </div>  
+    </div>
+</div>
