@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SkillService } from './services/skill/skill.service';
 import { ProjectsService } from './services/projects/projects.service';
 import { ExpreinceService } from './services/expereince/expreince.service';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ExpreinceService } from './services/expereince/expreince.service';
     SkillComponent,
     ContactComponent,
     ExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,

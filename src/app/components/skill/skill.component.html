@@ -34,14 +34,15 @@
         </mat-card>
     </div>    
 </div> -->
-
-<div class="container-fluid">
-    <div class="text-center skill_heading">
-        <h1>Skill</h1>
+<div [ngClass]="themeService.dark?'dark':'light'">
+    <div class="container-fluid">
+        <div class="text-center skill_heading">
+            <h1 class="p-4">Languages and Tools I use</h1>
+        </div>
+        <div class="row align-items-center justify-content-center">
+                <div class="skill d-flex flex-row col-md-3 col-6 justify-content-around p-4" *ngFor="let skill of skill">
+                        <img  src="{{skill.image}}" title="{{skill.skillName}}">
+                </div>
+        </div>    
     </div>
-    <div class="row align-items-center justify-content-center">
-            <div class="skill d-flex flex-row col-md-3 col-6 justify-content-around p-4" *ngFor="let skill of skill">
-                    <img  src="{{skill.image}}" title="{{skill.skillName}}">
-            </div>
-    </div>    
 </div>

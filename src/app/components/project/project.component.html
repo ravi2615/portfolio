@@ -1,1 +1,11 @@
-<p>project works!</p>
+<div class="container-fluid">
+    
+    <div class="row align-items-center justify-content-center">
+        <div class="text-center project_heading">
+            <h1 class="p-4">Projects I've worked on</h1>
+        </div>
+        <div class="project d-flex flex-row col-md-4 col-10 justify-content-center" *ngFor="let project of projects">
+            <img src="{{project.image}}" alt="{{project.name}}" class="justify-content-around">
+        </div>  
+    </div>  
+</div>

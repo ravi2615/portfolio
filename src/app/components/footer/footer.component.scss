@@ -2,8 +2,6 @@
 
 .container-fluid{
     padding: 40px 20px;
-    background: linear-gradient( to top, $light-main,$light-main) no-repeat bottom;
-    background-size: 100% 100%;
     color: $light-white;
     .social{
         img{
@@ -14,8 +12,18 @@
             transition: .5s;
         }
         img:hover{
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
     }
 
+}
+
+.light{
+    background: linear-gradient( to top, $light-main,$light-main) no-repeat bottom;
+    background-size: 100% 100%;
+}
+
+.dark{
+    background: linear-gradient( to top, $dark-light,$dark-light) no-repeat bottom;
+    background-size: 100% 100%;
 }

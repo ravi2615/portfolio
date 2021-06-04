@@ -1,4 +1,5 @@
-<div class="container-fluid">
+<div [ngClass]="themeService.dark ? 'dark':'light'">
+    <div class="container-fluid">
     <!-- <div class="text-center about_heading">
         <h1 class="text-uppercase">Who Am I?</h1>
     </div> -->
@@ -6,12 +7,14 @@
         <!-- <div class="col-12 col-md-6 text-center about_img">
             <img src="../../../assets/perfil.png">
         </div> -->
-        <div class="col-12 col-md-6 about_para about_para text-md-center">
+        <div class="col-12 col-md-6 about_para about_para text-center">
             <h2 class="about_subtitle">I'm Ravi Shankar</h2>
-            <p class="about_text">Currently pursuing B.tech from Computer Science & Engineering Branch of Birsa Institute of Technology, Sindri.
-                I always want To become a member of the team of experts of a organization. This will provide me an opportunity to develop my skills,
-                education for continued self-growth, and enhancement of the organization in turn the nation.
+            <p class="about_text">Currently pursuing B.tech in Computer Science & Engineering branch from Birsa Institute of Technology, Sindri.
+                 I always wish to become a member of the team of experts in an organization. 
+                 This will provide me an opportunity to develop my skills, education for continuous self-growth,
+                  and enhancement of the organization and hence prove to be helpful for the nation.
             </p>
         </div>
+    </div>
     </div>
 </div>

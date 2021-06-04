@@ -1,12 +1,11 @@
-<div class="container-fluid">
-  <div class="row">
-      <div class="text-center about_heading">
-          <h2>I'm proud to have collaborated with some awesome organization:</h2>
-      </div>
-      <div class="expereince_img d-flex flex-column align-items-center justify-content-center">
-        <div *ngFor="let expreince of experience">
-          <a href="{{expreince.link}}"><img src="{{expreince.image}}"></a>
-        </div>
-      </div>
-    </div>
+
+<div class="container">
+  <div class="text-center about_heading">
+    <h2>I'm proud to have collaborated with this awesome organization:</h2>
+  </div>
+  <div class="row align-items-center justify-content-center">
+          <div class="expereince_img d-flex flex-row col-md-3 col-6 justify-content-around p-4" *ngFor="let expreince of experience">
+            <a href="{{expreince.link}}"><img src="{{expreince.image}}"></a>
+          </div>
+  </div>    
 </div>

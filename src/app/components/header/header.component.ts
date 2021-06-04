@@ -1,3 +1,4 @@
+import { ThemeService } from './../../services/theme/theme.service';
 import { SocialService } from './../../services/social/social.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  social={}
-  constructor( private socialService: SocialService) { }
+  social={};
+  constructor( private socialService: SocialService, public themeService:ThemeService) { }
 
   ngOnInit(): void {
     this.social=this.socialService.getSocial()

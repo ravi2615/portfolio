@@ -1,3 +1,4 @@
+import { ThemeService } from './../../services/theme/theme.service';
 import { SocialService } from './../../services/social/social.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,7 +11,7 @@ export class FooterComponent implements OnInit {
 
   currentYear;
   social={};
-  constructor( private socialService: SocialService) { }
+  constructor( private socialService: SocialService, public themeService: ThemeService) { }
 
   ngOnInit(): void {
     this.currentYear=Date.now();

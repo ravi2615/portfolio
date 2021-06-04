@@ -1,8 +1,9 @@
 @import '../../../styles.scss';
-.container-fluid{
+.container{
     padding: 30px 10px;
     line-height: 80px;
-    height: 50vh;
+    // height: 50vh;
+    width: 100%;
     .about_heading {
         font-size: 30px ;
         font-weight: bold;

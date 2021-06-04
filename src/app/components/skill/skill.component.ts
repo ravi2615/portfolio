@@ -1,3 +1,4 @@
+import { ThemeService } from './../../services/theme/theme.service';
 import { Component, OnInit } from '@angular/core';
 import { SkillService } from 'src/app/services/skill/skill.service';
 
@@ -8,8 +9,8 @@ import { SkillService } from 'src/app/services/skill/skill.service';
 })
 export class SkillComponent implements OnInit {
 
-  skill={}
-  constructor( private skillService:SkillService) { }
+  skill={};
+  constructor( private skillService:SkillService, public themeService:ThemeService) { }
 
   ngOnInit(): void {
     this.skill = this.skillService.getSkill();

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsService } from 'src/app/services/projects/projects.service';
 
 @Component({
   selector: 'app-project',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+  projects = {};
+  isHover=false;
+  constructor( private projectService:ProjectsService) { }
 
   ngOnInit(): void {
+    this.projects = this.projectService.getProject();
   }
-
 }

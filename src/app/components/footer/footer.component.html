@@ -1,12 +1,14 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="social d-flex flex-row align-items-center justify-content-center">
-            <div *ngFor="let image of social">
-            <a href="{{image.link}}"><img src="{{image.image}}"></a>
-        </div>
-        </div>
-        <div class="text-center my-4">
-            <h6>&#169; ravishankar@{{currentYear|date:'y'}}</h6>
+<div [ngClass]="themeService.dark ? 'dark':'light'">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="social d-flex flex-row align-items-center justify-content-center">
+                <div *ngFor="let image of social">
+                <a href="{{image.link}}"><img src="{{image.image}}"></a>
+            </div>
+            </div>
+            <div class="text-center my-4">
+                <h6>&#169; ravishankar@{{currentYear|date:'y'}}</h6>
+            </div>
         </div>
     </div>
 </div>

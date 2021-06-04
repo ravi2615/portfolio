@@ -1,29 +1,40 @@
 @import '../../..//styles.scss';
 
 .container-fluid{
-    background: linear-gradient( to top ,transparent 65%, $light-main 20%, $light-main) no-repeat bottom;
-	background-size: 100% 100%;
     padding: 20px;
     color: $light-white;
     margin-top: -2px;
-    height: 100vh;
-    .skill_heading{
-        font-size: 45px
+    // height: 100vh;
+    .skill_heading h1{
+        font-size: 40px
     }
+    
+    
     .skill{
-        background-color: $light-white;
-        // box-shadow: 0 0 1px $light-main;
-        // border-radius: 4px;
         line-height: 50px;
-        // .mat-card-subtitle{
-        //     font-size: 15px;
-        // }
         margin: -5px;
         img{
             width: 80px;
             height: 80px;
             // border-radius: 50%;
             // padding: 5px;
+            background-color: $light-white;
+            padding: 5px;
+            border-radius: 5px;
         }
+    }
+}
+
+.light{
+    .container-fluid{
+    background: linear-gradient( to top ,transparent 65%, $light-main 20%, $light-main) no-repeat bottom;
+	background-size: 100% 100%;
+    }
+}
+
+.dark{
+    .container-fluid{
+    background: linear-gradient( to top ,transparent 65%, $dark-light 20%, $dark-light) no-repeat bottom;
+	background-size: 100% 100%;
     }
 }

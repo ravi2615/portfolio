@@ -3,14 +3,12 @@
 .container-fluid{
     margin-top: -1px;
     padding: 40px 20px;
-    background: linear-gradient( to top, $light-main,$light-main) no-repeat bottom;
-    background-size: 100% 100%;
     color: $light-white;
     .about_heading{
         font-size: 50px
     }
     .about{
-        padding: 20px;
+        // padding: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,13 +21,28 @@
         .about_para{
             .about_subtitle{
                 font-size: 30px !important;
-                font-weight: bold;
+                font-weight: bolder;
                 margin: 30px 0;
             }
             p{
                 line-height: 30px;
-                font-size: 20px;
+                font-size: 18px;
+                text-align: justify;
             }
         }
+    }
+}
+
+.light{
+    .container-fluid{
+        background: linear-gradient( to top, $light-main,$light-main) no-repeat bottom !important;
+        background-size: 100% 100%;
+    }
+}
+
+.dark{
+    .container-fluid{
+        background: linear-gradient( to top, $dark-light,$dark-light) no-repeat bottom !important;
+        background-size: 100% 100%;
     }
 }

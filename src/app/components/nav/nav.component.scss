@@ -2,21 +2,26 @@
 
 
 .mat-sidenav-container{
-    background-color: $light-white;
     height: 100vh;
     .mat-sidenav{
-        width: 250px;
-        padding: 50px;
-        background-color: $light-main;
-        line-height: 30px;
-        img{
-            -webkit-transform: scaleX(-1);
-            transform: scaleX(-1) !important;
-        }
+        height: 65vh;
+        width: 100%;
+        padding: 15px;
+        border-radius: 0 0 100% 0;
+            img{
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1) !important;
+            }
+            .mat-fab{
+                background: linear-gradient(  $light-main,$light-main 20% ) no-repeat bottom !important;
+                background-size: 100% 100%;
+            }
         .mat-nav-list{
             a{
                 color: $light-white;
-                font-size: 20px;
+                font-size: 25px;
+                transition: 5s !important;
+                margin: 6px;
             }
         }
 
@@ -24,6 +29,7 @@
     .mat-toolbar{
         position: fixed;
         z-index: 99;
+        box-shadow: 0 0 3px $light-main;
         a{
             text-decoration: none;
             cursor: pointer;
@@ -48,5 +54,37 @@
       }
 }
 
+.light{
+    .mat-sidenav-container{
+        background-color: $light-white !important;
+            .mat-sidenav{
+                background: $light-main !important;
+            }
+            .mat-toolbar{
+                .mat-icon-button{
+                    color: $light-main;
+                }
+            }
+        }
+}
 
+.dark{
+    .mat-sidenav-container{
+        background-color: $dark-black !important;
+        color: $light-white;
+            .mat-sidenav{
+                background: $dark-light !important;
+                color: $light-white;
+            }
+            .mat-toolbar{
+                background-color: $dark-light !important;
+                a{
+                    color: $light-white;
+                }
+                .mat-icon-button{
+                    color: $light-main;
+                }
+            }
+        }
+}
   

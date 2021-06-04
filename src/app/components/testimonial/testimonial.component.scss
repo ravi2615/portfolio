@@ -1,0 +1,49 @@
+@import '../../../styles.scss';
+.container{
+    padding: 30px 10px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .testimonial_heading h2 {
+        font-size: 35px !important;
+        font-weight: bolder;
+        padding-top: 10px;
+    }
+    .row{
+        padding: 20px 0;
+        .testimonial_title p{
+            font-size: 18px;
+        }
+        .carousel{
+            // width: 50%;
+            // background-color: antiquewhite;
+            .carousel-inner{
+                height: 50vh;
+                .carousel-item {
+                    padding: 20px;
+                    height: 100%;
+                    img{
+                        width: 100px !important;
+                        height: 100px;
+                        border-radius: 50%;
+                        margin-bottom: 20px;
+                        margin: 20px 40%;
+                        background-image: url("https://nd.net/wp-content/uploads/2016/04/profile-dummy.png");
+                        background-size: 100% 100%;
+                    }
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+            .mat-mini-fab{
+                background: linear-gradient( to bottom , $light-main 80%,transparent, ) no-repeat bottom !important;
+                background-size: 100% 100%;
+                margin: 4px;
+            }
+        }
+    }
+}
