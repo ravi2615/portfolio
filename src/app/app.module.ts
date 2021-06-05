@@ -1,3 +1,4 @@
+
 import { SocialService } from './services/social/social.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,6 +22,8 @@ import { ProjectsService } from './services/projects/projects.service';
 import { ExpreinceService } from './services/expereince/expreince.service';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { DialogComponent } from './components/project/dialog/dialog.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { TestimonialService } from './services/testimonial/testimonial.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { DialogComponent } from './components/project/dialog/dialog.component';
     ExperienceComponent,
     FooterComponent,
     TestimonialComponent,
-    DialogComponent
+    DialogComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,7 @@ import { DialogComponent } from './components/project/dialog/dialog.component';
     MaterialModule,
     FlexLayoutModule
   ],
-  providers: [SkillService, ProjectsService, SocialService,ExpreinceService],
+  providers: [SkillService, ProjectsService, SocialService,ExpreinceService,TestimonialService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

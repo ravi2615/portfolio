@@ -6,7 +6,7 @@
                 <h1>Hi! I'm <span>Ravi Shankar</span></h1>
                 <h6 style="font-style: italic;" >Currently pursuing B.tech in Computer Science and Engineering</h6>
                 <h1>Web Developer</h1>
-                <a href="#" mat-raised-button> Download Resume</a>
+                <a routerLink="resume" mat-raised-button target="_blank"> Download Resume</a>
                 <div class="social d-flex flex-row mr-3 my-2" >
                     <div *ngFor="let image of social">
                         <a href="{{image.link}}"><img src="{{image.image}}"></a>
