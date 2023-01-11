@@ -9,18 +9,20 @@
             <p>The people I have worked with have said some good things...</p>
           </div>
         <div id="carousel" class="col-12 col-md-6 carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../../../assets/roshan.jpg" alt="...">
+            <div class="carousel-inner" >
+              <div *ngFor="let testimonial of testimonial">
+                <!-- <div class="carousel-item active">
+                  <img src="" alt="Mohammed Mateen">
                   <p>Ravi is quite enthusiastic and a passionate coder. He has the ability to do the task in most efficient way.
                      It was a great experience to work with him and you can trust him with a overall project.</p>
-                     <h6 class="text-center">Roshan Kumar Rajak-AVP Marketing(Milo Doctor)</h6>
-                </div>
-                <!-- <div class ="carousel-item" *ngFor="let testimonial of testimonial">
-                  <img src="{{testimonial.image}}" alt="{{testimonial.ame}}">
+                     <h6 class="text-center">Mohammed Mateen - Software Engineer (Xiaomi India Private Limited)</h6>
+                </div> -->
+                <div class ="carousel-item" [ngClass]="testimonial.active ? 'active':''">
+                  <img src="{{testimonial.image}}" alt="testimonial.name">
                   <p>{{testimonial.description}}</p>
                      <h6 class="text-center">{{testimonial.name}}-{{testimonial.title}}</h6>
-                </div> -->
+                </div>
+              </div>
               </div>
             <div class="d-flex align-items-center justify-content-center">
                 <button mat-mini-fab class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">

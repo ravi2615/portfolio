@@ -6,8 +6,8 @@
             <div class="project d-flex flex-column align-items-center justify-content-center">
                     <h1 class="project_heading text-center text-uppercase">{{data.name}}</h1>
                     <img src="{{data.image}}" alt="{{data.name}}" class="justify-content-around">
-                    <a mat-raised-button *ngIf="data.link != ''" href="{{data.link}}" class="text-center">Visit Website<mat-icon>chevron_right</mat-icon></a>
-                    <a mat-raised-button *ngIf="data.link == ''" href="{{data.sourceCode}}" class="text-center">Source Code</a>
+                    <a mat-raised-button *ngIf="data.link != ''" href="{{data.link}}" target="_blank" class="text-center">Visit Website<mat-icon>chevron_right</mat-icon></a>
+                    <a mat-raised-button *ngIf="data.link == ''" href="{{data.sourceCode}}" target="_blank" class="text-center">Source Code</a>
             </div>  
             
             <div class="text-center skill_heading">

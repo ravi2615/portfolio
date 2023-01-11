@@ -19,6 +19,7 @@
              <a mat-list-item (click)="Navigate(skill)">Skill</a>
              <a mat-list-item (click)="Navigate(project)"> Projects</a>
              <a mat-list-item (click)="Navigate(experience)">Experience</a>
+             <a mat-list-item href="https://myblog-b702f.web.app/#/blog" target="_blank">Blog</a>
             </mat-nav-list>
         </div>
     </mat-sidenav>
@@ -35,6 +36,7 @@
                     <a mat-list-item (click)="Navigate(skill)">Skill</a>
                     <a mat-list-item (click)="Navigate(project)"> Projects</a>
                     <a mat-list-item (click)="Navigate(experience)">Experience</a>
+                    <a mat-list-item href="https://myblog-b702f.web.app/#/blog" target="_blank">Blog</a>
                     <a mat-list-item *ngIf="!themeService.dark" (click)="switchTheme()"><mat-icon>dark_mode</mat-icon></a>
                     <a mat-list-item *ngIf="themeService.dark" (click)="switchTheme()"><mat-icon>light_mode</mat-icon></a>
                 </mat-list>

@@ -122,6 +122,18 @@ export class SkillService {
           skillName:"Javascript",
           image:"https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
         },
+        {
+          skillName:"Java",
+          image:"https://worldvectorlogo.com/logos/java-14.svg"
+        },
+        {
+          skillName:"Spring Boot",
+          image:"https://cdn.worldvectorlogo.com/logos/spring-3.svg"
+        },
+        {
+          skillName:"My SQL",
+          image:"https://cdn.worldvectorlogo.com/logos/mysql-6.svg"
+        },
 ];
 
   getSkill(){
